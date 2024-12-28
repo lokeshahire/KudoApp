@@ -17,12 +17,14 @@ function AnalyticsPage({ setPage }) {
   useEffect(() => {
     const fetchAnalyticsData = async () => {
       const likesResponse = await fetch(
-        "http://localhost:8080/kudo/badgeLikes"
+        "https://kudoappbackend.onrender.com/kudo/badgeLikes"
       );
       const likesData = await likesResponse.json();
       setBadgeLikes(likesData.badgeLikes);
 
-      const userResponse = await fetch("http://localhost:8080/user");
+      const userResponse = await fetch(
+        "https://kudoappbackend.onrender.com/user"
+      );
       const userData = await userResponse.json();
 
       const leaderboardData = userData.users.map((user) => ({
@@ -31,7 +33,9 @@ function AnalyticsPage({ setPage }) {
       }));
       setLeaderboard(leaderboardData);
 
-      const mostLiked = await fetch("http://localhost:8080/kudo/analytics");
+      const mostLiked = await fetch(
+        "https://kudoappbackend.onrender.com/kudo/analytics"
+      );
       const mostLikedData = await mostLiked.json();
       setMostLikedPost(mostLikedData.mostLiked);
     };
@@ -103,8 +107,8 @@ function AnalyticsPage({ setPage }) {
         </div>
       </div>
 
-      <div className="text-center">
-        <h3>Most Liked Post</h3>
+      <div className="text-center mt-3">
+        <h5>Most Liked Post</h5>
         {mostLikedPost ? (
           <div>
             <p>

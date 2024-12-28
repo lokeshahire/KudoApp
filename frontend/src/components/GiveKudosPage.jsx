@@ -9,7 +9,7 @@ function GiveKudosPage({ setPage, user }) {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const response = await fetch("http://localhost:8080/user");
+      const response = await fetch("https://kudoappbackend.onrender.com/user");
       const data = await response.json();
       setUsers(data.users);
     };
@@ -18,17 +18,20 @@ function GiveKudosPage({ setPage, user }) {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch("http://localhost:8080/kudo/give", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          giver: user.name,
-          recipient,
-          badge,
-          reason,
-          likes: 1,
-        }),
-      });
+      const response = await fetch(
+        "https://kudoappbackend.onrender.com/kudo/give",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            giver: user.name,
+            recipient,
+            badge,
+            reason,
+            likes: 1,
+          }),
+        }
+      );
 
       const result = await response.json();
       if (response.ok) {

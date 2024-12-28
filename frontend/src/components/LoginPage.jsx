@@ -6,7 +6,9 @@ function LoginPage({ setUser, setPage }) {
 
   const handleLogin = async () => {
     let newname = name.toLowerCase();
-    const response = await fetch(`http://localhost:8080/user?name=${newname}`);
+    const response = await fetch(
+      `https://kudoappbackend.onrender.com/user?name=${newname}`
+    );
     const data = await response.json();
 
     if (data.exists) {

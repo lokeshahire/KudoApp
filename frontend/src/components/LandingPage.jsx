@@ -5,7 +5,7 @@ function LandingPage({ user, setPage }) {
   const handleKudos = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8080/user/kudos/${user.name}`,
+        `https://kudoappbackend.onrender.com/user/kudos/${user.name}`,
         {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
