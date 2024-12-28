@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+button {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+/* General styles for the landing page */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header section */
+.landing-header {
+  width: 100%;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.landing-header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.landing-btn {
+  background: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.landing-btn:hover {
+  opacity: 0.9;
+}
+
+/* Main section */
+.landing-main {
+  margin-bottom: 40px;
+}
+
+.landing-main p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.thumbs-up-btn {
+  font-size: 24px;
+  background: transparent;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  color: red;
+}
+
+.thumbs-up-btn:hover {
+  border-color: #000;
+}
+
+/* Footer section */
+.landing-footer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.logintitle {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.logindiv {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.logininput {
+  width: 300px;
+  padding: 10px;
+  font: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+}
+
+.loginbtn {
+  width: 150px;
+  padding: 10px 0;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* GiveKudosPage.css */
+.give-kudos-page {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.give-kudos-page h2 {
+  margin-bottom: 20px;
+}
+
+.give-kudos-page button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.give-kudos-page select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 50%;
+  margin-bottom: 15px;
+  text-align: center;
+  height: 60px;
+  border-radius: 10px;
+}
+.barchart {
+  width: 50vw;
+  height: 400px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.barchart canvas {
+  display: block;
+  width: 100% !important;
+}
+
+/* Table Container Styling */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders don't double up */
+  margin-top: 20px; /* Adds space at the top */
+}
+
+th,
+td {
+  padding: 12px 15px; /* Adds padding inside table cells */
+  text-align: left; /* Aligns text to the left */
+  border: 1px solid #ddd; /* Adds a light border around cells */
+}
+
+th {
+  background-color: #4caf50; /* Light green background for header */
+  color: white; /* White text color for the header */
+  font-weight: bold; /* Makes header text bold */
+}
+
+td {
+  background-color: #f9f9f9; /* Light gray background for table rows */
+}
+
+/* Hover effect for table rows */
+tr:hover {
+  background-color: #f1f1f1; /* Light gray hover effect */
+}
+
+/* Alternating row colors for readability */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
