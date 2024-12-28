@@ -100,6 +100,7 @@ footer {
   font-weight: bold;
   margin-bottom: 20px;
   color: #000;
+  text-align: center;
 }
 
 .logindiv {
@@ -161,12 +162,25 @@ footer {
   height: 60px;
   border-radius: 10px;
 }
+@media screen and (max-width: 768px) {
+  .give-kudos-page select {
+    width: 100%;
+  }
+}
 .barchart {
   width: 50vw;
   height: 400px;
   margin: 20px 0;
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .barchart {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 50px;
+  }
 }
 
 .barchart canvas {

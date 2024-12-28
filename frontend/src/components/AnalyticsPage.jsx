@@ -78,7 +78,7 @@ function AnalyticsPage({ setPage }) {
         <button onClick={() => setPage("landing")}>Langing Page</button>
       </div>
 
-      <div className="d-flex justify-content-evenly">
+      <div className="d-md-flex d-block justify-content-evenly mb-5 mb-md-0">
         <div>
           <h4>Kudos Given</h4>
           <div className="barchart">

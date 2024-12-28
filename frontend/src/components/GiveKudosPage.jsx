@@ -48,7 +48,7 @@ function GiveKudosPage({ setPage, user }) {
 
   return (
     <div className="give-kudos-page" style={{ padding: "20px" }}>
-      <div className="d-flex justify-content-between">
+      <div className="d-flex justify-content-between mb-5">
         <h2>Give Kudos</h2>
         <button onClick={() => setPage("landing")}>Langing Page</button>
       </div>
